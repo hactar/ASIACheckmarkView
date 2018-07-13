@@ -105,7 +105,7 @@ open class ASIACheckmarkView: UIButton {
         }
     }
     
-    fileprivate func animateGoodIntoSpinner(_ completion: ASIACompletion?) {
+    public func animateGoodIntoSpinner(_ completion: ASIACompletion?) {
         self.checkmarkGoodLayer?.strokeStart = 1
         self.checkmarkGoodLayer?.strokeEnd = 1
         
@@ -220,7 +220,7 @@ open class ASIACheckmarkView: UIButton {
         }
     }
     
-    fileprivate func startSpinning(){
+    public func startSpinning(){
         if self.isSpinning {
             CATransaction.begin()
             CATransaction.setCompletionBlock { () -> Void in
